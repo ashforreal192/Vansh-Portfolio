@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Panchang-Light";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* font-family: "Panchang"; */
+}
+
+#animated-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#circleScroll {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 999999;
+    border-radius: 50%;
+    background-color: gold;
+}
+
+#page1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: none;
+    color: white;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 5vh;
+    padding: 2.5vw 2.5vw;
+}
+
+/* #nav button {
+    background: none;
+    font-weight: 100;
+    font-size: 1.7vw;
+    font-weight: bolder;
+    color: black;
+    padding: 0;
+    border: none;
+} */
+
+#nav button {
+    background: none;
+    font-weight: bolder;
+    font-size: 1.7vw;
+    color: black;
+    padding: 0.2vw 1vw;
+    border: 0.3vw solid transparent; /* Initially transparent border */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect */
+#nav button:hover {
+    border: 0.3vw solid white; /* Border on hover */
+    border-radius: 20%;
+    background: black; /* Background becomes black */
+    color: white; /* Text turns white */
+}
+
+
+#description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 100%;
+    /* background: #262626 -webkit-gradient(linear, left top, right top, from(#262626),
+    to(#262626), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 7.5vw;
+    background-size: 7.5vw;
+    color: aqua;
+    -webkit-background-clip: text;
+    animation: 5s infinite; */
+}
+
+#heroName{
+    text-transform: uppercase;
+    font-size: 6vw;
+    font-weight: 300;
+    margin-top: 20vh;
+    margin-bottom: 2.5vh;
+    font-family: 'Kola-Regular';
+    /* font-family: 'Panchang-Extrabold'; */
+
+
+    /* background: linear-gradient(to right, #262626 0%, #fff 50%, #262626 100%);
+    -webkit-background-size: 7.5vw;
+    background-size: 7.5vw;
+    color: aqua;
+    -webkit-text-fill-color: aqua;
+    animation: animate 5s infinite linear; */
+}
+
+#heroJob{
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 300;
+    margin-bottom: 2.5vh;
+}
+
+/* #footer button{
+    border-radius: 10% 50% 10% 50%;
+    border: none;
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-top: 4vh;
+} */
+
+#footer button {
+    border-radius: 10% 50% 10% 50%;
+    border: none;
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-top: 4vh;
+    width: 5vw;
+    height: 5vw;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover effect */
+#footer button:hover {
+    border-radius: 2.6vw 1vw 2.6vw 1vw; /* Oval shape */
+    background: black;
+    width: 16vw; /* Expands to fit text */
+    height: 60px;
+}
+
+/* Hide icon initially */
+#footer button i {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show text on hover */
+#footer button::after {
+    content: "Scroll Down ↓";
+    font-size: 1.2vw;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hide icon and show text on hover */
+#footer button:hover i {
+    opacity: 0;
+}
+
+#footer button:hover::after {
+    opacity: 1;
+}
+
+
+#page2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    background-color: grey;
+    color: white;
+}
