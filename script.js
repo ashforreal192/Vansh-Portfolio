@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Darker gradient background
         const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-        gradient.addColorStop(0, "#4a5759");
+        gradient.addColorStop(0, "#640d14");
         gradient.addColorStop(1, "#1b263b");
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ctx.lineTo(canvas.width, canvas.height);
         ctx.lineTo(0, canvas.height);
         ctx.closePath();
-        ctx.fillStyle = "#2b2d42"; // Very Dark Grey
+        ctx.fillStyle = "#000000"; // Very Dark Grey
         ctx.fill();
 
         waveOffset += 0.4; // Speed of wave movement
@@ -96,4 +96,22 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", resizeCanvas);
     animate();
 });
+
+
+// Code for About button hover effect:
+// const aboutBtn = document.getElementById("aboutBtn");
+// const description = document.getElementById("description");
+// const aboutSection = document.getElementById("aboutSection");
+
+// aboutBtn.addEventListener("mouseenter", () => {
+//     description.style.opacity = 0;
+//     aboutSection.style.opacity = 1;
+//     aboutSection.style.visibility = "visible";
+// });
+
+// aboutBtn.addEventListener("mouseleave", () => {
+//     description.style.opacity = 1;
+//     aboutSection.style.opacity = 0;
+//     aboutSection.style.visibility = "hidden";
+// });
 
