@@ -163,12 +163,26 @@ body {
     margin-top: 4vh;
 } */
 
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11vh;
+}
+
+#footer #currentStatus{
+    margin-right: 2vw;
+    /* margin-top: 4vh; */
+    font-size: 0.8vw;
+}
+
 #footer button {
     border-radius: 0 50% 10% 50%;
     border: none;
     font-size: 3vw;
     margin-left: 2vw;
-    margin-top: 4vh;
+    /* margin-top: 4vh; */
     width: 5vw;
     height: 5vw;
     background: white;
