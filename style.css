@@ -39,6 +39,8 @@ body {
     color: white;
 }
 
+
+
 #nav{
     display: flex;
     align-items: center;
@@ -50,7 +52,7 @@ body {
 }
 
 
-#nav button {
+#nav #aboutButton {
     background: none;
     font-weight: bolder;
     font-size: 1.7vw;
@@ -61,8 +63,8 @@ body {
 }
 
 /* Hover effect */
-#nav button:hover {
-    border: 0.3vw solid white; /* Border on hover */
+#nav #aboutButton:hover {
+    border: 0.3vw solid #f8f9fa; /* Border on hover */
     border-radius: 20%;
     background: black; /* Background becomes black */
     color: white; /* Text turns white */
@@ -106,7 +108,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #f8f9fa, black);; /* Semi-transparent background */
+    background: linear-gradient(to bottom, #f8f9fa, black); /* Semi-transparent background */
     color: white;
     display: flex;
     flex-direction: column;
@@ -118,8 +120,8 @@ body {
 }
 
 #aboutImage {
-    width: 100px;
-    height: 100px;
+    width: 19vh;
+    height: 19vh;
     background: white;
     border-radius: 50%;
     margin-bottom: 2vw;
@@ -135,11 +137,6 @@ body {
 #nav #aboutButton:hover + #hero #aboutSection {
     opacity: 1;
     visibility: visible;
-}
-
-/* Change #nav background color on About button hover */
-#aboutButton:hover {
-    background-color: #f8f9fa;
 }
 
 #footer{

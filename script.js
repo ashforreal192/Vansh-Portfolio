@@ -107,11 +107,12 @@ const nav = document.getElementById('nav');
 aboutButton.addEventListener('mouseover', () => {
     aboutSection.style.opacity = '1';
     aboutSection.style.visibility = 'visible';
-    nav.style.backgroundColor = 'black';
+    // nav.style.backgroundImage = 'linear-gradient(to bottom, #6c757d, #f8f9fa)';
 });
 
 aboutButton.addEventListener('mouseout', () => {
     aboutSection.style.opacity = '0';
     aboutSection.style.visibility = 'hidden';
-    nav.style.backgroundColor = ''; // Resets to original background color
+    // nav.style.backgroundColor = '';
+    // nav.style.backgroundImage = '';
 });
