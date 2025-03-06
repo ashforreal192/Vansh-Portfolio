@@ -46,17 +46,9 @@ body {
     width: 100%;
     height: 5vh;
     padding: 2.5vw 2.5vw;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-/* #nav button {
-    background: none;
-    font-weight: 100;
-    font-size: 1.7vw;
-    font-weight: bolder;
-    color: black;
-    padding: 0;
-    border: none;
-} */
 
 #nav button {
     background: none;
@@ -85,13 +77,10 @@ body {
     height: 65vh;
     width: 100%;
     transition: opacity 0.5s ease-in-out;
-    /* background: #262626 -webkit-gradient(linear, left top, right top, from(#262626),
-    to(#262626), color-stop(0.5, #fff)) 0 0 no-repeat;
-    -webkit-background-size: 7.5vw;
-    background-size: 7.5vw;
-    color: aqua;
-    -webkit-background-clip: text;
-    animation: 5s infinite; */
+}
+
+#hero{
+    position: relative;
 }
 
 #heroName{
@@ -101,15 +90,6 @@ body {
     margin-top: 20vh;
     margin-bottom: 2.5vh;
     font-family: 'Kola-Regular';
-    /* font-family: 'Panchang-Extrabold'; */
-
-
-    /* background: linear-gradient(to right, #262626 0%, #fff 50%, #262626 100%);
-    -webkit-background-size: 7.5vw;
-    background-size: 7.5vw;
-    color: aqua;
-    -webkit-text-fill-color: aqua;
-    animation: animate 5s infinite linear; */
 }
 
 #heroJob{
@@ -120,14 +100,13 @@ body {
 }
 
 
-/* #aboutSection {
+#aboutSection {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 60%;
-    background: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f8f9fa, black);; /* Semi-transparent background */
     color: white;
     display: flex;
     flex-direction: column;
@@ -136,8 +115,6 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    padding: 2vw;
-    border-radius: 10px;
 }
 
 #aboutImage {
@@ -152,17 +129,18 @@ body {
     font-size: 1.2vw;
     text-align: center;
     max-width: 80%;
-} */
+}
 
+/* Hover effect for About button */
+#nav #aboutButton:hover + #hero #aboutSection {
+    opacity: 1;
+    visibility: visible;
+}
 
-/* #footer button{
-    border-radius: 10% 50% 10% 50%;
-    border: none;
-    font-size: 3vw;
-    margin-left: 2vw;
-    margin-top: 4vh;
-} */
-
+/* Change #nav background color on About button hover */
+#aboutButton:hover {
+    background-color: #f8f9fa;
+}
 
 #footer{
     display: flex;

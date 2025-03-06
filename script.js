@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ctx.lineTo(canvas.width, canvas.height);
         ctx.lineTo(0, canvas.height);
         ctx.closePath();
-        ctx.fillStyle = "#000000"; // Very Dark Grey
+        ctx.fillStyle = "#000000";
         ctx.fill();
 
         waveOffset += 0.4; // Speed of wave movement
@@ -98,20 +98,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 // Code for About button hover effect:
-// const aboutBtn = document.getElementById("aboutBtn");
-// const description = document.getElementById("description");
-// const aboutSection = document.getElementById("aboutSection");
+const aboutButton = document.getElementById('aboutButton');
+const aboutSection = document.getElementById('aboutSection');
+const nav = document.getElementById('nav');
 
-// aboutBtn.addEventListener("mouseenter", () => {
-//     description.style.opacity = 0;
-//     aboutSection.style.opacity = 1;
-//     aboutSection.style.visibility = "visible";
-// });
+aboutButton.addEventListener('mouseover', () => {
+    aboutSection.style.opacity = '1';
+    aboutSection.style.visibility = 'visible';
+    nav.style.backgroundColor = 'black';
+});
 
-// aboutBtn.addEventListener("mouseleave", () => {
-//     description.style.opacity = 1;
-//     aboutSection.style.opacity = 0;
-//     aboutSection.style.visibility = "hidden";
-// });
-
+aboutButton.addEventListener('mouseout', () => {
+    aboutSection.style.opacity = '0';
+    aboutSection.style.visibility = 'hidden';
+    nav.style.backgroundColor = ''; // Resets to original background color
+});
