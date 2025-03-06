@@ -116,3 +116,15 @@ aboutButton.addEventListener('mouseout', () => {
     // nav.style.backgroundColor = '';
     // nav.style.backgroundImage = '';
 });
+
+
+// Code for scroll down clicking effect:
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const scrollDownButton = document.getElementById('scrollDown');
+
+    scrollDownButton.addEventListener('click', () => {
+        scroll.scrollTo('#page2');
+    });
+});
