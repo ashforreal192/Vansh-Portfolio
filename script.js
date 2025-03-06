@@ -120,11 +120,11 @@ aboutButton.addEventListener('mouseout', () => {
 
 // Code for scroll down clicking effect:
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
     const scrollDownButton = document.getElementById('scrollDown');
 
     scrollDownButton.addEventListener('click', () => {
         scroll.scrollTo('#page2');
     });
-});
+// });
