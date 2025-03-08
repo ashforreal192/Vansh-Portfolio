@@ -36,8 +36,6 @@ function MouseFollower(xscale, yscale) {
         document.querySelector("#circleScroll").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
     })
 }
-
-
 MouseFollower();
 
 
@@ -63,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Darker gradient background
         const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-        gradient.addColorStop(0, "#6c757d");
+        gradient.addColorStop(0, "#0077b6");
         gradient.addColorStop(1, "#1b263b");
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
