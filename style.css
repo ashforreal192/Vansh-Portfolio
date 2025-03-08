@@ -310,6 +310,8 @@ body {
 }
 
 #fullDescription #postion{
+    display: flex;
+    flex-direction: column;
     width: 20%;
     height: 100%;
 }
