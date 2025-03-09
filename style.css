@@ -442,3 +442,135 @@ body {
     font-size: 3vh;
 } */
 /* Page 5 end */
+
+
+/* Page 6 start */
+#page6 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    /* display: flex; */
+    justify-items: center;
+    align-content: center;
+}
+
+#page6 #allInfo{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#page6 #allInfo #left{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 50%;
+    height: 100%;
+    padding-top: 10vh;
+}
+
+#page6 #allInfo #left #timeline {
+    font-size: 2vh;
+}
+
+#page6 #allInfo #left #organisation{
+    font-size: 8vh;
+    font-family: 'Bonny-Regular';
+}
+
+#page6 #allInfo #left #position{
+    font-size: 4vh;
+    max-width: 100%; /* Ensure content fits properly */
+    overflow-wrap: break-word;
+}
+
+#page6 #allInfo #left #experience{
+    font-size: 2.15vh;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-weight: bolder;
+    padding-top: 2vh;
+}
+
+#page6 #allInfo #right{
+    height: 70%;
+    width: 55%;
+    overflow: hidden;
+}
+
+#page6 #allInfo #right img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+/* Page 6 end */
+
+
+/* Page 7 start */
+#page7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    /* display: flex; */
+    justify-items: center;
+    align-content: center;
+}
+
+#page7 #allInfo{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#page7 #allInfo #left{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 50%;
+    height: 100%;
+    padding-top: 10vh;
+}
+
+#page7 #allInfo #left #timeline {
+    font-size: 2vh;
+}
+
+#page7 #allInfo #left #organisation{
+    font-size: 8vh;
+    font-family: 'Bonny-Regular';
+}
+
+#page7 #allInfo #left #position{
+    font-size: 4vh;
+    max-width: 100%; /* Ensure content fits properly */
+    overflow-wrap: break-word;
+}
+
+#page7 #allInfo #left #experience{
+    font-size: 2.15vh;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-weight: bolder;
+    padding-top: 2vh;
+}
+
+#page7 #allInfo #right{
+    height: 70%;
+    width: 55%;
+    overflow: hidden;
+}
+
+#page7 #allInfo #right img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+/* Page 7 end */
