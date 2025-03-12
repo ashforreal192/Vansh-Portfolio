@@ -152,9 +152,9 @@ body {
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-#aboutImage {
-    width: 19vh;
-    height: 19vh;
+#aboutImage img {
+    width: 20vh;
+    height: 20vh;
     background: white;
     border-radius: 50%;
     margin-bottom: 2vw;
