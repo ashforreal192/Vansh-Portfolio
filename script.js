@@ -129,14 +129,14 @@ document.addEventListener("DOMContentLoaded", function () {
 // const aboutButton = document.getElementById('aboutButton');
 // const aboutSection = document.getElementById('aboutSection');
 
-aboutButton.addEventListener('click', function() {
-    // Only toggle on mobile/tablet
-    if (window.innerWidth <= 992) {
-        const isVisible = aboutSection.style.opacity === '1';
-        aboutSection.style.opacity = isVisible ? '0' : '1';
-        aboutSection.style.visibility = isVisible ? 'hidden' : 'visible';
-    }
-});
+// aboutButton.addEventListener('click', function() {
+//     // Only toggle on mobile/tablet
+//     if (window.innerWidth <= 992) {
+//         const isVisible = aboutSection.style.opacity === '1';
+//         aboutSection.style.opacity = isVisible ? '0' : '1';
+//         aboutSection.style.visibility = isVisible ? 'hidden' : 'visible';
+//     }
+// });
 
 // // Keep hover behavior for desktop
 // if (window.innerWidth > 992) {
