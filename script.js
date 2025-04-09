@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const aboutButton = document.getElementById('aboutButton');
-const aboutSection = document.getElementById('aboutSection');
+// const aboutButton = document.getElementById('aboutButton');
+// const aboutSection = document.getElementById('aboutSection');
 
 aboutButton.addEventListener('click', function() {
     // Only toggle on mobile/tablet
@@ -138,43 +138,43 @@ aboutButton.addEventListener('click', function() {
     }
 });
 
-// Keep hover behavior for desktop
-if (window.innerWidth > 992) {
-    aboutButton.addEventListener('mouseover', () => {
-        aboutSection.style.opacity = '1';
-        aboutSection.style.visibility = 'visible';
-    });
-
-    aboutButton.addEventListener('mouseout', () => {
-        aboutSection.style.opacity = '0';
-        aboutSection.style.visibility = 'hidden';
-    });
-}
-
-
-
-
-// const aboutButton = document.getElementById('aboutButton');
-// const aboutSection = document.getElementById('aboutSection');
-// const nav = document.getElementById('nav');
-
-// let isAboutVisible = false;
-
-// aboutButton.addEventListener('click', () => {
-//     isAboutVisible = !isAboutVisible;
-
-//     if (isAboutVisible) {
+// // Keep hover behavior for desktop
+// if (window.innerWidth > 992) {
+//     aboutButton.addEventListener('mouseover', () => {
 //         aboutSection.style.opacity = '1';
 //         aboutSection.style.visibility = 'visible';
-//         // Optionally, add styling to nav on click
-//         // nav.style.backgroundImage = 'linear-gradient(to bottom, #6c757d, #f8f9fa)';
-//     } else {
+//     });
+
+//     aboutButton.addEventListener('mouseout', () => {
 //         aboutSection.style.opacity = '0';
 //         aboutSection.style.visibility = 'hidden';
-//         // nav.style.backgroundColor = '';
-//         // nav.style.backgroundImage = '';
-//     }
-// });
+//     });
+// }
+
+
+
+
+const aboutButton = document.getElementById('aboutButton');
+const aboutSection = document.getElementById('aboutSection');
+const nav = document.getElementById('nav');
+
+let isAboutVisible = false;
+
+aboutButton.addEventListener('click', () => {
+    isAboutVisible = !isAboutVisible;
+
+    if (isAboutVisible) {
+        aboutSection.style.opacity = '1';
+        aboutSection.style.visibility = 'visible';
+        // Optionally, add styling to nav on click
+        // nav.style.backgroundImage = 'linear-gradient(to bottom, #6c757d, #f8f9fa)';
+    } else {
+        aboutSection.style.opacity = '0';
+        aboutSection.style.visibility = 'hidden';
+        // nav.style.backgroundColor = '';
+        // nav.style.backgroundImage = '';
+    }
+});
 
 
 
