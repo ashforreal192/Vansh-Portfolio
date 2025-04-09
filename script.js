@@ -35,6 +35,20 @@ function MouseFollower(xscale, yscale) {
     window.addEventListener("mousemove", function (dets) {
         document.querySelector("#circleScroll").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
     })
+
+    // Add touch support for mobile
+    window.addEventListener("touchmove", function(e) {
+        e.preventDefault();
+        const touch = e.touches[0];
+        document.querySelector("#circleScroll").style.transform = `translate(${touch.clientX}px, ${touch.clientY}px)`;
+    });
+
+    // Only initialize cursor for non-touch devices
+    if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
+        window.addEventListener("mousemove", function (dets) {
+            document.querySelector("#circleScroll").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
+        });
+    }    
 }
 MouseFollower();
 
@@ -71,10 +85,17 @@ document.addEventListener("DOMContentLoaded", function () {
         ctx.beginPath();
         ctx.moveTo(0, canvas.height * 0.5);
 
-        for (let i = 0; i <= canvas.width; i += 10) {
+        const step = window.innerWidth < 768 ? 20 : 10;
+        
+        for (let i = 0; i <= canvas.width; i += step) {
             const waveHeight = Math.sin((i + waveOffset) * 0.02) * 15;
             ctx.lineTo(i, canvas.height * 0.5 + waveHeight);
         }
+
+        // for (let i = 0; i <= canvas.width; i += 10) {
+        //     const waveHeight = Math.sin((i + waveOffset) * 0.02) * 15;
+        //     ctx.lineTo(i, canvas.height * 0.5 + waveHeight);
+        // }
 
         ctx.lineTo(canvas.width, canvas.height);
         ctx.lineTo(0, canvas.height);
@@ -97,23 +118,94 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
 // Code for About button hover effect:
+
+
+
 const aboutButton = document.getElementById('aboutButton');
 const aboutSection = document.getElementById('aboutSection');
-const nav = document.getElementById('nav');
 
-aboutButton.addEventListener('mouseover', () => {
-    aboutSection.style.opacity = '1';
-    aboutSection.style.visibility = 'visible';
-    // nav.style.backgroundImage = 'linear-gradient(to bottom, #6c757d, #f8f9fa)';
+aboutButton.addEventListener('click', function() {
+    // Only toggle on mobile/tablet
+    if (window.innerWidth <= 992) {
+        const isVisible = aboutSection.style.opacity === '1';
+        aboutSection.style.opacity = isVisible ? '0' : '1';
+        aboutSection.style.visibility = isVisible ? 'hidden' : 'visible';
+    }
 });
 
-aboutButton.addEventListener('mouseout', () => {
-    aboutSection.style.opacity = '0';
-    aboutSection.style.visibility = 'hidden';
-    // nav.style.backgroundColor = '';
-    // nav.style.backgroundImage = '';
-});
+// Keep hover behavior for desktop
+if (window.innerWidth > 992) {
+    aboutButton.addEventListener('mouseover', () => {
+        aboutSection.style.opacity = '1';
+        aboutSection.style.visibility = 'visible';
+    });
+
+    aboutButton.addEventListener('mouseout', () => {
+        aboutSection.style.opacity = '0';
+        aboutSection.style.visibility = 'hidden';
+    });
+}
+
+
+
+
+// const aboutButton = document.getElementById('aboutButton');
+// const aboutSection = document.getElementById('aboutSection');
+// const nav = document.getElementById('nav');
+
+// let isAboutVisible = false;
+
+// aboutButton.addEventListener('click', () => {
+//     isAboutVisible = !isAboutVisible;
+
+//     if (isAboutVisible) {
+//         aboutSection.style.opacity = '1';
+//         aboutSection.style.visibility = 'visible';
+//         // Optionally, add styling to nav on click
+//         // nav.style.backgroundImage = 'linear-gradient(to bottom, #6c757d, #f8f9fa)';
+//     } else {
+//         aboutSection.style.opacity = '0';
+//         aboutSection.style.visibility = 'hidden';
+//         // nav.style.backgroundColor = '';
+//         // nav.style.backgroundImage = '';
+//     }
+// });
+
+
+
+// const aboutButton = document.getElementById('aboutButton');
+// const aboutSection = document.getElementById('aboutSection');
+// const nav = document.getElementById('nav');
+
+// aboutButton.addEventListener('mouseover', () => {
+//     aboutSection.style.opacity = '1';
+//     aboutSection.style.visibility = 'visible';
+//     // nav.style.backgroundImage = 'linear-gradient(to bottom, #6c757d, #f8f9fa)';
+// });
+
+// aboutButton.addEventListener('mouseout', () => {
+//     aboutSection.style.opacity = '0';
+//     aboutSection.style.visibility = 'hidden';
+//     // nav.style.backgroundColor = '';
+//     // nav.style.backgroundImage = '';
+// });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Code for scroll down clicking effect:
