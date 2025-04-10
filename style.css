@@ -310,38 +310,68 @@ body {
 
 
 /* Page 3 start */
-/* #page3 {
+#page3 {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black;
     color: white;
+    /* display: flex; */
     justify-items: center;
     align-content: center;
 }
 
-#fullDescription{
-    height: 90%;
+#page3 #allInfo{
+    height: 95%;
     width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 4vw;
+    align-items: center;
 }
 
-#fullDescription #postion{
+#page #allInfo #left{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    gap: 1vh;
+    width: 50%;
     height: 100%;
+    padding-top: 10vh;
 }
 
-#fullDescription #experience{
-    height: 100%;
-    width: 70%;
+#page3 #allInfo #left #timeline {
+    font-size: 2vh;
+}
+
+#page3 #allInfo #left #organisation{
+    font-size: 8vh;
+    font-family: 'Bonny-Regular';
+}
+
+#page3 #allInfo #left #position{
+    font-size: 4vh;
+    max-width: 100%; /* Ensure content fits properly */
+    overflow-wrap: break-word;
+}
+
+#page3 #allInfo #left #experience{
+    font-size: 2.15vh;
+    overflow-wrap: break-word;
+    max-width: 100%;
     font-weight: bolder;
-    font-size: 3vh;
-} */
+    padding-top: 2vh;
+}
+
+#page3 #allInfo #right{
+    height: 70%;
+    width: 55%;
+    overflow: hidden;
+}
+
+#page3 #allInfo #right img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
 /* Page 3 end */
 
 
@@ -412,172 +442,69 @@ body {
 
 
 /* Page 5 start */
-
-/* #page5 {
+#page5 {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black;
     color: white;
+    /* display: flex; */
     justify-items: center;
     align-content: center;
 }
 
-#fullDescription{
-    height: 90%;
+#page5 #allInfo{
+    height: 95%;
     width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 4vw;
+    align-items: center;
 }
 
-#fullDescription #postion{
+#page5 #allInfo #left{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    gap: 1vh;
+    width: 50%;
     height: 100%;
+    padding-top: 10vh;
 }
 
-#fullDescription #experience{
-    height: 100%;
-    width: 70%;
+#page5 #allInfo #left #timeline {
+    font-size: 2vh;
+}
+
+#page5 #allInfo #left #organisation{
+    font-size: 8vh;
+    font-family: 'Bonny-Regular';
+}
+
+#page5 #allInfo #left #position{
+    font-size: 4vh;
+    max-width: 100%; /* Ensure content fits properly */
+    overflow-wrap: break-word;
+}
+
+#page5 #allInfo #left #experience{
+    font-size: 2.15vh;
+    overflow-wrap: break-word;
+    max-width: 100%;
     font-weight: bolder;
-    font-size: 3vh;
-} */
+    padding-top: 2vh;
+}
+
+#page5 #allInfo #right{
+    height: 70%;
+    width: 55%;
+    overflow: hidden;
+}
+
+#page5 #allInfo #right img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
 /* Page 5 end */
-
-
-/* Page 6 start */
-#page6 {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    /* display: flex; */
-    justify-items: center;
-    align-content: center;
-}
-
-#page6 #allInfo{
-    height: 95%;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#page6 #allInfo #left{
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    width: 50%;
-    height: 100%;
-    padding-top: 10vh;
-}
-
-#page6 #allInfo #left #timeline {
-    font-size: 2vh;
-}
-
-#page6 #allInfo #left #organisation{
-    font-size: 8vh;
-    font-family: 'Bonny-Regular';
-}
-
-#page6 #allInfo #left #position{
-    font-size: 4vh;
-    max-width: 100%; /* Ensure content fits properly */
-    overflow-wrap: break-word;
-}
-
-#page6 #allInfo #left #experience{
-    font-size: 2.15vh;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    font-weight: bolder;
-    padding-top: 2vh;
-}
-
-#page6 #allInfo #right{
-    height: 70%;
-    width: 55%;
-    overflow: hidden;
-}
-
-#page6 #allInfo #right img{
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-}
-/* Page 6 end */
-
-
-/* Page 7 start */
-#page7 {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    /* display: flex; */
-    justify-items: center;
-    align-content: center;
-}
-
-#page7 #allInfo{
-    height: 95%;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#page7 #allInfo #left{
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    width: 50%;
-    height: 100%;
-    padding-top: 10vh;
-}
-
-#page7 #allInfo #left #timeline {
-    font-size: 2vh;
-}
-
-#page7 #allInfo #left #organisation{
-    font-size: 8vh;
-    font-family: 'Bonny-Regular';
-}
-
-#page7 #allInfo #left #position{
-    font-size: 4vh;
-    max-width: 100%; /* Ensure content fits properly */
-    overflow-wrap: break-word;
-}
-
-#page7 #allInfo #left #experience{
-    font-size: 2.15vh;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    font-weight: bolder;
-    padding-top: 2vh;
-}
-
-#page7 #allInfo #right{
-    height: 70%;
-    width: 55%;
-    overflow: hidden;
-}
-
-#page7 #allInfo #right img{
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-}
-/* Page 7 end */
 
 
 
@@ -612,9 +539,9 @@ body {
         margin-top: 15vh;
     }
     #page2 #allInfo #left #organisation,
+    #page3 #allInfo #left #organisation,
     #page4 #allInfo #left #organisation,
-    #page6 #allInfo #left #organisation,
-    #page7 #allInfo #left #organisation {
+    #page5 #allInfo #left #organisation {
         font-size: 6vh;
     }
     #aboutText {
@@ -685,16 +612,16 @@ body {
     
     /* Remove images and adjust layout */
     #page2 #allInfo #right,
+    #page3 #allInfo #right,
     #page4 #allInfo #right,
-    #page6 #allInfo #right,
-    #page7 #allInfo #right {
+    #page5 #allInfo #right {
         display: none;
     }
     
     #page2 #allInfo #left,
+    #page3 #allInfo #left,
     #page4 #allInfo #left,
-    #page6 #allInfo #left,
-    #page7 #allInfo #left {
+    #page5 #allInfo #left {
         width: 90%;
         padding: 5vh 0;
     }
@@ -723,24 +650,24 @@ body {
         font-size: 3.5vw;
     }
     #page2 #allInfo,
+    #page3 #allInfo,
     #page4 #allInfo,
-    #page6 #allInfo,
-    #page7 #allInfo {
+    #page5 #allInfo {
         flex-direction: column;
         height: auto;
         padding: 5vh 0;
     }
     #page2 #allInfo #left,
+    #page3 #allInfo #left,
     #page4 #allInfo #left,
-    #page6 #allInfo #left,
-    #page7 #allInfo #left {
+    #page5 #allInfo #left {
         width: 90%;
         padding-top: 5vh;
     }
     #page2 #allInfo #right,
+    #page3 #allInfo #right,
     #page4 #allInfo #right,
-    #page6 #allInfo #right,
-    #page7 #allInfo #right {
+    #page5 #allInfo #right {
         width: 90%;
         height: 50vh;
         margin-top: 3vh;
@@ -771,18 +698,18 @@ body {
     
     /* Organization name sizing */
     #page2 #allInfo #left #organisation,
+    #page3 #allInfo #left #organisation,
     #page4 #allInfo #left #organisation,
-    #page6 #allInfo #left #organisation,
-    #page7 #allInfo #left #organisation {
+    #page5 #allInfo #left #organisation {
         font-size: 6vh;
         line-height: 1.2;
     }
     
     /* Experience text sizing */
     #page2 #allInfo #left #experience,
+    #page3 #allInfo #left #experience,
     #page4 #allInfo #left #experience,
-    #page6 #allInfo #left #experience,
-    #page7 #allInfo #left #experience {
+    #page5 #allInfo #left #experience {
         font-size: 2.5vh;
     }
     
@@ -836,21 +763,21 @@ body {
         font-size: 2vw;
     }
     #page2 #allInfo #left #organisation,
+    #page3 #allInfo #left #organisation,
     #page4 #allInfo #left #organisation,
-    #page6 #allInfo #left #organisation,
-    #page7 #allInfo #left #organisation {
+    #page5 #allInfo #left #organisation {
         font-size: 5vh;
     }
     #page2 #allInfo #left #position,
+    #page3 #allInfo #left #position,
     #page4 #allInfo #left #position,
-    #page6 #allInfo #left #position,
-    #page7 #allInfo #left #position {
+    #page5 #allInfo #left #position {
         font-size: 3vh;
     }
     #page2 #allInfo #left #experience,
+    #page3 #allInfo #left #experience,
     #page4 #allInfo #left #experience,
-    #page6 #allInfo #left #experience,
-    #page7 #allInfo #left #experience {
+    #page5 #allInfo #left #experience {
         font-size: 2vh;
     } */
 }
@@ -870,9 +797,9 @@ body {
     
     /* Organization name sizing */
     #page2 #allInfo #left #organisation,
+    #page3 #allInfo #left #organisation,
     #page4 #allInfo #left #organisation,
-    #page6 #allInfo #left #organisation,
-    #page7 #allInfo #left #organisation {
+    #page5 #allInfo #left #organisation {
         font-size: 5vh;
     }
 
@@ -896,9 +823,9 @@ body {
         font-size: 3vw;
     }
     #page2 #allInfo #left #organisation,
+    #page3 #allInfo #left #organisation,
     #page4 #allInfo #left #organisation,
-    #page6 #allInfo #left #organisation,
-    #page7 #allInfo #left #organisation {
+    #page5 #allInfo #left #organisation {
         font-size: 4vh;
     } */
 }
