@@ -100,24 +100,6 @@ body {
 }
 
 
-#nav #githubLink {
-    background: none;
-    font-weight: bolder;
-    font-size: 1.7vw;
-    color: black;
-    padding: 0.2vw 1vw;
-    border: 0.3vw solid transparent; /* Initially transparent border */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-}
-
-#nav #githubLink:hover {
-    border: 0.3vw solid #f8f9fa; /* Border on hover */
-    border-radius: 20%;
-    background: black; /* Background becomes black */
-    color: white; /* Text turns white */
-}
-
-
 #hero{
     position: relative;
 }
@@ -533,188 +515,111 @@ body {
 
 
 /* Responsive adjustments */
-@media (max-width: 1200px) {
+
+
+/* Remove cursor for mobile/tablet */
+@media (max-width: 992px) {
+    #circleScroll {
+        display: none;
+    }
+    
+    /* Remove scroll down button */
+    #scrollDown {
+        display: none;
+    }
+    
+    /* Center status text when button is removed */
+    #footer {
+        justify-content: center;
+    }
+    
+    /* Remove hover effects for social links */
+    #socials a:hover {
+        color: black;
+        transform: none;
+    }
+}
+
+/* Tablet specific adjustments */
+@media (max-width: 992px) and (min-width: 768px) {
     #heroName {
-        font-size: 8vw;
+        font-size: 7vw;
     }
     #heroJob {
         font-size: 3vw;
     }
     #aboutText {
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
     #nav #aboutButton {
-        font-size: 2.2vw;
+        font-size: 2.5vw;
     }
     #socials a {
         font-size: 3vw;
     }
 }
 
-@media (max-width: 992px) {
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+    /* Hero section adjustments */
     #heroName {
-        font-size: 9vw;
+        font-size: 10vw;
         margin-top: 15vh;
     }
-    #page2 #allInfo #left #organisation,
-    #page3 #allInfo #left #organisation,
-    #page4 #allInfo #left #organisation,
-    #page5 #allInfo #left #organisation {
-        font-size: 6vh;
-    }
-    #aboutText {
-        font-size: 2.2vw;
-    }
-    #footer #currentStatus {
-        font-size: 1.2vw;
-    }
-        /* Remove cursor for touch devices */
-    #circleScroll {
-        display: none;
-    }
-    
-    /* Remove hover effects for nav buttons */
-    #nav #aboutButton:hover {
-        border: 0.3vw solid transparent;
-        background: none;
-        color: black;
-    }
-    
-    /* Remove scroll down button */
-    #scrollDown {
-        display: none;
-    }
-    
-    /* Adjust footer to center status without button */
-    #footer {
-        justify-content: center;
-    }
-
-
-
-    /* Remove cursor for touch devices */
-    #circleScroll {
-        display: none;
-    }
-    
-    /* Remove hover effects for nav buttons */
-    #nav #aboutButton:hover {
-        border: 0.3vw solid transparent;
-        background: none;
-        color: black;
-    }
-    
-    /* Remove scroll down button */
-    #scrollDown {
-        display: none;
-    }
-    
-    /* Adjust footer to center status without button */
-    #footer {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* Further font size adjustments */
-    #heroName {
-        font-size: 11vw;
-    }
     #heroJob {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
+    
+    /* About section adjustments */
     #aboutText {
         font-size: 3vw;
-    }
-    
-    /* Remove images and adjust layout */
-    #page2 #allInfo #right,
-    #page3 #allInfo #right,
-    #page4 #allInfo #right,
-    #page5 #allInfo #right {
-        display: none;
-    }
-    
-    #page2 #allInfo #left,
-    #page3 #allInfo #left,
-    #page4 #allInfo #left,
-    #page5 #allInfo #left {
-        width: 90%;
-        padding: 5vh 0;
-    }
-
-
-
-    /* #heroName {
-        font-size: 10vw;
-    }
-    #heroJob {
-        font-size: 4vw;
-    }
-    #aboutText {
-        font-size: 2.5vw;
         max-width: 90%;
     }
     #aboutImage img {
         width: 15vh;
         height: 15vh;
     }
+    
+    /* Nav adjustments */
+    #nav {
+        padding: 4vw;
+    }
     #nav #aboutButton {
-        font-size: 2.8vw;
-        padding: 0.5vw 1.5vw;
+        font-size: 4vw;
+        padding: 1vw 3vw;
     }
     #socials a {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
+    
+    /* Experience pages adjustments */
     #page2 #allInfo,
     #page3 #allInfo,
     #page4 #allInfo,
     #page5 #allInfo {
         flex-direction: column;
         height: auto;
-        padding: 5vh 0;
+        padding: 5vh 5vw;
     }
+    
     #page2 #allInfo #left,
     #page3 #allInfo #left,
     #page4 #allInfo #left,
     #page5 #allInfo #left {
-        width: 90%;
+        width: 100%;
         padding-top: 5vh;
     }
+    
     #page2 #allInfo #right,
     #page3 #allInfo #right,
     #page4 #allInfo #right,
     #page5 #allInfo #right {
-        width: 90%;
-        height: 50vh;
-        margin-top: 3vh;
-    }
-    #footer #currentStatus {
-        font-size: 1.8vw;
-    } */
-}
-
-@media (max-width: 576px) {
-
-    /* Font size adjustments */
-    #heroName {
-        font-size: 14vw;
-    }
-    #heroJob {
-        font-size: 6vw;
-    }
-    #aboutText {
-        font-size: 4vw;
-    }
-    #nav #aboutButton {
-        font-size: 5vw;
-    }
-    #socials a {
-        font-size: 6vw;
+        width: 100%;
+        height: 40vh;
+        margin-top: 5vh;
     }
     
-    /* Organization name sizing */
+    /* Text sizing for experience sections */
     #page2 #allInfo #left #organisation,
     #page3 #allInfo #left #organisation,
     #page4 #allInfo #left #organisation,
@@ -723,127 +628,51 @@ body {
         line-height: 1.2;
     }
     
-    /* Experience text sizing */
-    #page2 #allInfo #left #experience,
-    #page3 #allInfo #left #experience,
-    #page4 #allInfo #left #experience,
-    #page5 #allInfo #left #experience {
-        font-size: 2.5vh;
-    }
-    
-    /* Current status text */
-    #footer #currentStatus {
-        font-size: 3vw;
-        text-align: center;
-        width: 100%;
-    }
-
-
-    /* #heroName {
-        font-size: 12vw;
-        margin-top: 10vh;
-    }
-    #heroJob {
-        font-size: 5vw;
-    }
-    #aboutText {
-        font-size: 3.5vw;
-    }
-    #nav {
-        padding: 5vw;
-    }
-    #nav #aboutButton {
-        font-size: 4vw;
-        padding: 1vw 2vw;
-    }
-    #socials a {
-        font-size: 5vw;
-    }
-    #footer {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 5vw;
-    }
-    #footer #currentStatus {
-        font-size: 2.5vw;
-        margin-top: 2vh;
-    }
-    #footer button {
-        width: 8vw;
-        height: 8vw;
-        font-size: 4vw;
-    }
-    #footer button:hover {
-        width: 25vw;
-        height: 8vw;
-    }
-    #footer button::after {
-        font-size: 2vw;
-    }
-    #page2 #allInfo #left #organisation,
-    #page3 #allInfo #left #organisation,
-    #page4 #allInfo #left #organisation,
-    #page5 #allInfo #left #organisation {
-        font-size: 5vh;
-    }
     #page2 #allInfo #left #position,
     #page3 #allInfo #left #position,
     #page4 #allInfo #left #position,
     #page5 #allInfo #left #position {
         font-size: 3vh;
     }
+    
     #page2 #allInfo #left #experience,
     #page3 #allInfo #left #experience,
     #page4 #allInfo #left #experience,
     #page5 #allInfo #left #experience {
-        font-size: 2vh;
-    } */
-}
-
-@media (max-width: 400px) {
-
-    /* Further font adjustments */
-    #heroName {
-        font-size: 16vw;
-    }
-    #heroJob {
-        font-size: 7vw;
-    }
-    #aboutText {
-        font-size: 4.5vw;
+        font-size: 2.2vh;
     }
     
-    /* Organization name sizing */
+    /* Footer adjustments */
+    #footer #currentStatus {
+        font-size: 3vw;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    #heroName {
+        font-size: 12vw;
+    }
+    #heroJob {
+        font-size: 5.5vw;
+    }
+    #aboutText {
+        font-size: 3.5vw;
+    }
+    #nav #aboutButton {
+        font-size: 4.5vw;
+    }
+    #socials a {
+        font-size: 6vw;
+    }
+    
+    /* Make organization names a bit smaller */
     #page2 #allInfo #left #organisation,
     #page3 #allInfo #left #organisation,
     #page4 #allInfo #left #organisation,
     #page5 #allInfo #left #organisation {
         font-size: 5vh;
     }
-
-
-    /* #heroName {
-        font-size: 14vw;
-    }
-    #heroJob {
-        font-size: 6vw;
-    }
-    #aboutText {
-        font-size: 4vw;
-    }
-    #nav #aboutButton {
-        font-size: 5vw;
-    }
-    #socials a {
-        font-size: 6vw;
-    }
-    #footer #currentStatus {
-        font-size: 3vw;
-    }
-    #page2 #allInfo #left #organisation,
-    #page3 #allInfo #left #organisation,
-    #page4 #allInfo #left #organisation,
-    #page5 #allInfo #left #organisation {
-        font-size: 4vh;
-    } */
 }

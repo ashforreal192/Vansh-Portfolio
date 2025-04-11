@@ -1,6 +1,12 @@
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
-    smooth: true
+    smooth: true,
+    tablet: {
+        breakpoint: 0,    // <---- Fixes The Issue 🎉
+      },
+    mobile: {
+        breakpoint: 0,    // <---- Fixes The Issue 🎉
+      }
 });
 
 // Code for the cursor:
@@ -124,36 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Code for About button hover effect:
 
-
-
-// const aboutButton = document.getElementById('aboutButton');
-// const aboutSection = document.getElementById('aboutSection');
-
-// aboutButton.addEventListener('click', function() {
-//     // Only toggle on mobile/tablet
-//     if (window.innerWidth <= 992) {
-//         const isVisible = aboutSection.style.opacity === '1';
-//         aboutSection.style.opacity = isVisible ? '0' : '1';
-//         aboutSection.style.visibility = isVisible ? 'hidden' : 'visible';
-//     }
-// });
-
-// // Keep hover behavior for desktop
-// if (window.innerWidth > 992) {
-//     aboutButton.addEventListener('mouseover', () => {
-//         aboutSection.style.opacity = '1';
-//         aboutSection.style.visibility = 'visible';
-//     });
-
-//     aboutButton.addEventListener('mouseout', () => {
-//         aboutSection.style.opacity = '0';
-//         aboutSection.style.visibility = 'hidden';
-//     });
-// }
-
-
-
-
 const aboutButton = document.getElementById('aboutButton');
 const aboutSection = document.getElementById('aboutSection');
 const nav = document.getElementById('nav');
@@ -175,28 +151,6 @@ aboutButton.addEventListener('click', () => {
         // nav.style.backgroundImage = '';
     }
 });
-
-
-
-// const aboutButton = document.getElementById('aboutButton');
-// const aboutSection = document.getElementById('aboutSection');
-// const nav = document.getElementById('nav');
-
-// aboutButton.addEventListener('mouseover', () => {
-//     aboutSection.style.opacity = '1';
-//     aboutSection.style.visibility = 'visible';
-//     // nav.style.backgroundImage = 'linear-gradient(to bottom, #6c757d, #f8f9fa)';
-// });
-
-// aboutButton.addEventListener('mouseout', () => {
-//     aboutSection.style.opacity = '0';
-//     aboutSection.style.visibility = 'hidden';
-//     // nav.style.backgroundColor = '';
-//     // nav.style.backgroundImage = '';
-// });
-
-
-
 
 
 
