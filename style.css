@@ -100,6 +100,24 @@ body {
 }
 
 
+#nav #githubLink {
+    background: none;
+    font-weight: bolder;
+    font-size: 1.7vw;
+    color: black;
+    padding: 0.2vw 1vw;
+    border: 0.3vw solid transparent; /* Initially transparent border */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+#nav #githubLink:hover {
+    border: 0.3vw solid #f8f9fa; /* Border on hover */
+    border-radius: 20%;
+    background: black; /* Background becomes black */
+    color: white; /* Text turns white */
+}
+
+
 #hero{
     position: relative;
 }
