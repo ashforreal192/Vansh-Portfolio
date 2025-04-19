@@ -541,7 +541,7 @@ body {
 }
 
 /* Tablet specific adjustments */
-@media (max-width: 992px) and (min-width: 768px) {
+/* @media (max-width: 992px) and (min-width: 768px) {
     #heroName {
         font-size: 7vw;
     }
@@ -557,13 +557,13 @@ body {
     #socials a {
         font-size: 3vw;
     }
-}
+} */
 
 /* Mobile specific adjustments */
 @media (max-width: 767px) {
     /* Hero section adjustments */
     #heroName {
-        font-size: 10vw;
+        font-size: 8vw;
         margin-top: 15vh;
     }
     #heroJob {

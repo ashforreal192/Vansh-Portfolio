@@ -1,12 +1,13 @@
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true,
-    tablet: {
-        breakpoint: 0,    // <---- Fixes The Issue 🎉
-      },
-    mobile: {
-        breakpoint: 0,    // <---- Fixes The Issue 🎉
-      }
+    smoothMobile: true
+    // tablet: {
+    //     breakpoint: 0,    // <---- Fixes The Issue 🎉
+    //   },
+    // mobile: {
+    //     breakpoint: 0,    // <---- Fixes The Issue 🎉
+    //   }
 });
 
 // Code for the cursor:
